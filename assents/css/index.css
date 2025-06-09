@@ -1,0 +1,89 @@
+.titulo-form {
+    font-size: 2.2rem;
+    color: #2C4A4A;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.custom-input {
+    border: 1px solid #94D9CE;
+    background-color: #E8F7F4;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.custom-input:focus {
+    border-color: #7FCFC0;
+    box-shadow: 0 0 5px rgba(127, 207, 192, 0.5);
+}
+
+.navbar-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: #B2E2DC;
+    font-size: 16px;
+}
+
+.nav-links-li a {
+    color: #1B3E3E;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links-li a:hover {
+    color: #145954;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links-li {
+    display: flex;
+    align-items: center;
+}
+.btn-contato {
+    padding: 8px 16px;
+    background-color: #94D9CE;
+    border: 1px solid #7FCFC0;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #FFFFFF;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+.btn-contato:hover {
+    background-color: #7FCFC0;
+}
+.logotipo{
+    font-size: 28px;
+    font-weight: 530;
+    color: #2C4A4A;
+    font-family: "Poppins", sans-serif;
+}
+
+
+input[type="submit"] {
+    padding: 12px 28px;
+    background-color: #8DD7CD;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #176C67;
+}

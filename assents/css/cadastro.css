@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Lora:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f7fd;
+  font-family: 'Lora', serif;
+}
+
+.navbar-custom {
+  background-color: #a678e2; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  font-size:16px ;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logotipo {
+  color: #4b0082; ;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links-li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links-li a:hover {
+  color: #f0e6fb; 
+}
+
+.btn-contato {
+  background-color: white;
+  color: #a678e2;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-contato:hover {
+  background-color: #f3ebff;
+  color: #7c4ccf;
+}
+
+.logotipo {
+  font-weight: 530;
+  color: #4b0082;
+  font-family: "Poppins", sans-serif;
+}
+
+
+nav.navbar {
+  background-color: #cdb4f1;
+  padding: 0.4rem 1rem;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+
+header {
+  padding: 2rem 0;
+  background-color: #f8e9e9;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+
+.form-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(176, 139, 234, 0.2);
+  z-index: 1;
+  position: relative;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+input.form-control {
+  border: 1px solid #cdb4f1;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+input.form-control:focus {
+  border-color: #a77ff2;
+  box-shadow: 0 0 0 0.15rem rgba(167, 127, 242, 0.25);
+}
+
+
+input[type="submit"] {
+  background-color: #b088f9;
+  color: white;
+  border: none;
+  padding: 0.6rem 2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #9e6be1;
+}
+
+
+footer {
+  font-size: 0.85rem;
+}
