@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -22,7 +25,7 @@
 
   <main class="container mt-4">
     <div class="form-box mx-auto mt-5">
-      <form id="formEndereco">
+      <form id="formEndereco" onsubmit="cadastrar(event)">
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="nome" class="form-label">Nome</label>
@@ -41,8 +44,8 @@
             <input type="text" class="form-control" id="cep" placeholder="Ex: 01001-000" required>
           </div>
           <div class="col-md-4 mb-3">
-            <label for="endereco" class="form-label">Endereço</label>
-            <input type="text" class="form-control" id="endereco">
+            <label for="logradouro" class="form-label">Logradouro</label>
+            <input type="text" class="form-control" id="logradouro">
           </div>
           <div class="col-md-4 mb-3">
             <label for="numero" class="form-label">Número</label>
@@ -62,7 +65,7 @@
           </div>
         </div>
         <div class="text-center mt-3">
-          <input type="submit" value="Cadastrar" class="btn btn-primary" onsubmit="cadastrar()">
+          <input type="submit" value="Cadastrar" class="btn btn-primary">
         </div>
       </form>
     </div>
