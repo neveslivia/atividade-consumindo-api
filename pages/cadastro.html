@@ -62,10 +62,33 @@
           </div>
         </div>
         <div class="text-center mt-3">
-          <input type="submit" value="Cadastrar" class="btn btn-primary">
+          <input type="submit" value="Cadastrar" class="btn btn-primary" onsubmit="cadastrar()">
         </div>
       </form>
     </div>
+    <section>
+      <h2 class="text-2xl font-bold mt-8 mb-4">Tabela de Cadastros</h2>
+      <table  class="w-full table-auto bg-white shadow-md rounded">
+        <thead class="bg-gray-200">
+          <tr>
+            <th class="px-4 py-2">ID</th>
+            <th class="px-4 py-2">Nome</th>
+            <th class="px-4 py-2">E-mail</th>
+            <th class="px-4 py-2">senha</th>
+            <th class="px-4 py-2">Cep</th>
+            <th class="px-4 py-2">Endereco</th>
+            <th class="px-4 py-2">Numero</th>
+            <th class="px-4 py-2">Bairro</th>
+            <th class="px-4 py-2">Cidade</th>
+            <th class="px-4 py-2">Estado</th>
+
+          </tr>
+        </thead>
+        <tbody id="tabelaCorpo">
+        </tbody>
+      </table>
+    </section>
+    
   </main>
 
   <footer class="border-top fixed-bottom text-muted bg-light">
@@ -80,6 +103,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-  <script src="/assents/js/index.js"></script>
+  <script src="/assents/js/cadastro.js"></script>
 </body>
 </html>
