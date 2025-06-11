@@ -61,8 +61,10 @@
             <input type="text" class="form-control" id="estado">
           </div>
         </div>
-        <button type="submit">Cadastrar</button>
-        <button type="button" onclick="prepararEdicao()">Atualizar</button>
+        <button type="submit" id="btnCadastrar">Cadastrar</button>
+        <button type="button"  id="btnAtualizar"onclick="editarFuncionario()">Atualizar</button>
+        <input type="hidden" id="id-edicao">
+
       </form>
     </div>
     <section>
@@ -91,7 +93,7 @@
     
   </main>
 
-  <footer class="border-top fixed-bottom text-muted bg-light">
+  <footer class="border-top text-muted bg-light">
     <div class="container">
       <div class="row py-3">
         <div class="col-12 col-md-4 text-center text-md-left">&copy; 2025 - Lívia Neves</div>
