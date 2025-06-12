@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestão de Cargos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assents/css/cargos.css">
+</head>
+<body style="min-width: 372px;">
+  <header>
+    <nav class="navbar-custom">
+      <span class="logotipo">RH-Tech</span>
+      <ul class="nav-links">
+        <li class="nav-links-li"><a href="/index.html">Login</a></li>
+        <li class="nav-links-li"><a href="#">Serviços</a></li>
+        <li class="nav-links-li"><a href="#">Perfil</a></li>
+      </ul>
+      <a href="#"><button class="btn-contato">Contato</button></a>
+    </nav>
+  </header>
+
+  <main class="container mt-4">
+    <div class="form-box mx-auto mt-4">
+      <form id="formCargo" onsubmit="salvarCargo(event)">
+        <input type="hidden" id="cargoId">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="nome" class="form-label">Nome do Cargo</label>
+            <input type="text" class="form-control" id="nome" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="descricao" class="form-label">Descrição</label>
+            <input type="text" class="form-control" id="descricao">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Salvar</button>
+        <button type="button" class="btn btn-secondary" onclick="limparFormulario()">Cancelar</button>
+      </form>
+    </div>
+
+    <section class="mt-4">
+      <h2 class="mb-3">Lista de Cargos</h2>
+      <table class="table table-bordered table-cargos">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tabelaCargos"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="border-top text-muted bg-light mt-4">
+    <div class="container">
+      <div class="row py-3">
+        <div class="col-12 col-md-4 text-center text-md-left">&copy; 2025 - RH-Tech</div>
+        <div class="col-12 col-md-4 text-center"><a href="#" class="text-decoration-none text-dark">Política de Privacidade</a></div>
+        <div class="col-12 col-md-4 text-center text-md-right"><a href="#" class="text-decoration-none text-dark">Administrar</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assents/js/cargos.js"></script>
+</body>
+</html>
